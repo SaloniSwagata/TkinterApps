@@ -1,4 +1,4 @@
-# Illustration of fixed size window
+# Illustration of adding images to tkinter
 from tkinter import *
 root = Tk()
 
@@ -9,10 +9,10 @@ root.geometry("733x434")
 root.minsize(500, 300)
 root.maxsize(800, 500)
 
-string = "Welcome to Tkinter"
+photo = PhotoImage(file="sample1.png")
+label = Label(image=photo)
 
+label.pack()
 
-msg = Label(text=string)
-msg.pack()
 
 root.mainloop()
